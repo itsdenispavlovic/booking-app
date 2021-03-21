@@ -17,4 +17,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/**
+ * Admin
+ */
+Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'admin']], function () {
+
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+
+    /**
+     * Roles
+     */
+    Route::resource('roles', 'RoleController');
+
+    /**
+     * User
+     */
+    Route::resource('users', 'UserController');
+
+});
