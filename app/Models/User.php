@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -21,6 +22,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @property string $two_factor_secret
  * @property string $two_factor_recovery_codes
  * @property string $remember_token
+ *
+ * @mixin Builder
  */
 class User extends Authenticatable
 {

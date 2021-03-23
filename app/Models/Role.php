@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Eloquent as Model;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -12,6 +13,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @version March 21, 2021, 12:23 pm UTC
  *
  * @property string $name
+ *
+ * @mixin Builder
  */
 class Role extends Model
 {
@@ -20,7 +23,7 @@ class Role extends Model
     use HasFactory;
 
     public $table = 'roles';
-    
+
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
@@ -55,5 +58,5 @@ class Role extends Model
         'deleted_at' => 'nullable'
     ];
 
-    
+
 }
