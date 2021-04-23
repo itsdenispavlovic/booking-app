@@ -1,22 +1,14 @@
 <meta charset="utf-8">
 <title>{!! config('app.name') !!}</title>
-<meta name="description"  content="Professional Creative Template" />
-<meta name="author" content="IG Design">
-<meta name="keywords"  content="ig design, website, design, html5, css3, jquery, creative, clean, animated, portfolio, blog, one-page, multi-page, corporate, business," />
-<meta property="og:title" content="Professional Creative Template" />
+<meta name="description"  content="Booking App - Denis Pavlovic" />
+<meta name="author" content="Denis Pavlovic">
+<meta name="keywords"  content="denis pavlovic, booking app" />
+<meta property="og:title" content="{{ config('app.name') }}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="" />
-<meta property="og:image:width" content="470" />
-<meta property="og:image:height" content="246" />
-<meta property="og:site_name" content="" />
-<meta property="og:description" content="Professional Creative Template" />
-<meta name="twitter:card" content="" />
-<meta name="twitter:site" content="https://twitter.com/IvanGrozdic" />
-<meta name="twitter:domain" content="http://ivang-design.com/" />
-<meta name="twitter:title" content="" />
-<meta name="twitter:description" content="Professional Creative Template" />
-<meta name="twitter:image" content="http://ivang-design.com/" />
+<meta property="og:url" content="{{ url('/') }}" />
+<meta property="og:image" content="https://denispavlovic.com/images/denis_pavlovic.jpg" />
+<meta property="og:site_name" content="{{ config('app.name') }}" />
+<meta property="og:description" content="Booking App" />
 
 <!-- Mobile Specific Metas
 ================================================== -->
