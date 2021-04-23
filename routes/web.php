@@ -15,6 +15,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MainController::class, 'index']);
+Route::get('about-us', [MainController::class, 'aboutUs'])->name('page.about-us');
+Route::get('contact-us', [MainController::class, 'contact'])->name('page.contact');
+
+Route::get('our-rooms', function() {
+    return view('main.our-rooms');
+})->name('page.our-rooms');
+
+Route::get('rooms-gallery', function() {
+    return view('main.room-gallery');
+})->name('page.room-gallery');
+
+Route::get('news', function() {
+    return view('main.blog');
+})->name('page.news');
 
 /**
  * Admin
