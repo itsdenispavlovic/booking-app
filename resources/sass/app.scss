@@ -6,3 +6,22 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Owl Carousel
+@import "~owl.carousel/src/scss/owl.carousel";
+@import "~owl.carousel/src/scss/owl.theme.default";
+
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+// Ionicons
+@import '~ionicons-npm/scss/ionicons';
+
+// jQuery Fancybox
+@import '~jquery-fancybox/source/scss/jquery.fancybox';
+
+// DatePicker
+@import '~bootstrap-datepicker/dist/css/bootstrap-datepicker.css';

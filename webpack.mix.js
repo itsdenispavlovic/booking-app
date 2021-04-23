@@ -11,6 +11,16 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
+mix.js('resources/js/app.js', 'public/js').version()
+    .styles([
+        'resources/css/theme/style.css',
+        'resources/css/theme/color.css'
+    ], 'public/css/styles.css').version()
+    .scripts([
+        'resources/js/theme/plugins.js',
+        'resources/js/theme/reveal-home.js',
+        'resources/js/theme/custom.js'
+    ], 'public/js/scripts.js').version()
+    .sass('resources/sass/app.scss', 'public/css').version()
     .sourceMaps();
+
