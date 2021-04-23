@@ -20,4 +20,18 @@ class MainController extends Controller
     {
         return view('main.contact');
     }
+
+    public function showNode($page)
+    {
+        $nodeSlug = str_replace(array(".php", ".html"), "", $page);
+
+        if(view()->exists('main.' . $nodeSlug))
+        {
+            return view('main.' . $nodeSlug);
+        }
+        else
+        {
+            abort(404);
+        }
+    }
 }

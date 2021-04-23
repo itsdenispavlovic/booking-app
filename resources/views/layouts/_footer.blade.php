@@ -12,7 +12,6 @@
                 <a href="services.html">services</a>
                 <a href="restaurant.html">restaurant</a>
                 <a href="testimonials.html">testimonials</a>
-                <a href="gallery.html">gallery &amp; images</a>
             </div>
             <div class="col-md-5 mt-4 mt-md-0 text-center text-md-left logos-footer">
                 <h6 class="color-white mb-3">about us</h6>

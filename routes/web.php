@@ -30,6 +30,7 @@ Route::get('news', function() {
     return view('main.blog');
 })->name('page.news');
 
+
 /**
  * Admin
  */
@@ -48,3 +49,5 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin', 
     Route::resource('users', 'UserController');
 
 });
+
+Route::get('{page}', [MainController::class, 'showNode'])->where('page', '([A-z0-9\d\-\/_.]+)?')->where('nodePath', '^(?!img-thumb.*$).*');
