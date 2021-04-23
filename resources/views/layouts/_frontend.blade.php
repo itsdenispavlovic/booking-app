@@ -34,18 +34,18 @@
                     <a href="#" class="social-top">tw</a>
                     <div class="lang-wrap">
                         eng
-                        <ul>
-                            <li><a href="#">ger</a></li>
-                            <li><a href="#">rus</a></li>
-                            <li><a href="#">ser</a></li>
-                        </ul>
+{{--                        <ul>--}}
+{{--                            <li><a href="#">ger</a></li>--}}
+{{--                            <li><a href="#">rus</a></li>--}}
+{{--                            <li><a href="#">ser</a></li>--}}
+{{--                        </ul>--}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="menu">
-        <a href="index.html" >
+        <a href="/" >
             <div class="logo">
                 <h5 class="text-white">{!! config('app.name') !!}</h5>
 {{--                <img src="img/logo.png" alt="">--}}
@@ -54,43 +54,38 @@
         <ul>
             <li>
                 <a class="curent-page" href="#" >home</a>
-                <ul>
-                    <li><a href="index.html">Flip Slider</a></li>
-                    <li><a class="curent-page" href="index-1.html">Video Background</a></li>
-                    <li><a href="index-2.html">Moving Image</a></li>
-                </ul>
             </li>
             <li>
                 <a href="#" >rooms</a>
                 <ul>
                     <li><a href="rooms.html">Our Rooms</a></li>
                     <li><a href="rooms-gallery.html">Room Gallery</a></li>
-                    <li><a href="rooms-video.html">Room Video</a></li>
+{{--                    <li><a href="rooms-video.html">Room Video</a></li>--}}
                 </ul>
             </li>
+{{--            <li>--}}
+{{--                <a href="#" >pages</a>--}}
+{{--                <ul>--}}
+{{--                    <li><a href="#">Explore</a></li>--}}
+{{--                    <li><a href="search.html">Search</a></li>--}}
+{{--                    <li><a href="tandc.html">Terms &amp; Conditions</a></li>--}}
+{{--                    <li><a href="services.html">Services</a></li>--}}
+{{--                    <li><a href="restaurant.html">Restaurant</a></li>--}}
+{{--                    <li><a href="#">Testimonials</a></li>--}}
+{{--                    <li><a href="#">Gallery</a></li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
             <li>
-                <a href="#" >pages</a>
-                <ul>
-                    <li><a href="explore.html">Explore</a></li>
-                    <li><a href="search.html">Search</a></li>
-                    <li><a href="tandc.html">Terms &amp; Conditions</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="restaurant.html">Restaurant</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
+                <a href="#">about us</a>
             </li>
             <li>
-                <a href="about.html">about us</a>
+                <a href="#">news</a>
             </li>
             <li>
-                <a href="blog.html">news</a>
+                <a href="#">contact</a>
             </li>
             <li>
-                <a href="contact.html">contact</a>
-            </li>
-            <li>
-                <a href="search.html"><span>book now</span></a>
+                <a href="#"><span>book now</span></a>
             </li>
         </ul>
     </div>
@@ -103,10 +98,9 @@
 
     <div id="poster_background"></div>
     <div id="video-wrap" class="parallax-top">
-        <img src="img/trans.png" alt="">
-{{--        <video id="video_background" preload="auto" autoplay loop="loop" muted="muted" poster="img/trans.png">--}}
-{{--            <source src="video/video.mp4" type="video/mp4">--}}
-{{--        </video>--}}
+        <video id="video_background" preload="auto" autoplay loop="loop" muted="muted" poster="img/trans.png">
+            <source src="{{ asset('video/video.mp4') }}" type="video/mp4">
+        </video>
     </div>
     <div class="dark-over-video"></div>
 
@@ -657,115 +651,115 @@
     </div>
 </div>
 
-<div class="section">
-    <div id="owl-sep-2" class="owl-carousel owl-theme">
-        <div class="item">
-            <a href="img/gallery/1.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/1-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/2.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/2-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/3.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/3-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/4.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/4-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/5.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/5-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/6.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/6-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/7.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/7-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/8.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/8-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/9.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/9-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/10.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/10-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/1.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/1-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/2.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/2-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/3.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/3-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/4.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/4-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="img/gallery/5.jpg" data-fancybox="gallery">
-                <div class="img-wrap gallery-small">
-                    <img src="img/gallery/5-s.jpg" alt="">
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
+{{--<div class="section">--}}
+{{--    <div id="owl-sep-2" class="owl-carousel owl-theme">--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/1.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/1-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/2.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/2-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/3.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/3-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/4.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/4-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/5.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/5-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/6.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/6-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/7.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/7-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/8.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/8-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/9.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/9-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/10.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/10-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/1.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/1-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/2.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/2-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/3.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/3-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/4.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/4-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="item">--}}
+{{--            <a href="img/gallery/5.jpg" data-fancybox="gallery">--}}
+{{--                <div class="img-wrap gallery-small">--}}
+{{--                    <img src="img/gallery/5-s.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 
 @include('layouts._footer')
 
